@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avazbek Aliyev - Xizmatlar</title>
+    <style>
+        :root {
+            --bg-color: #09090b;
+            --card-bg: #18181b;
+            --accent: #3b82f6;
+            --text-main: #fafafa;
+            --text-muted: #a1a1aa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #27272a;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin: 40px 0 20px 0;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .contact-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 40px;
+            background-color: var(--accent);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Avazbek Aliyev</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Raqamli yechimlar, SMM va Dasturlash</p>
+        </header>
+
+        <h2 class="section-title">⚡ Asosiy Xizmatlar</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🤖</div>
+                <h3>Telegram Bot Yaratish</h3>
+                <p>Biznes, guruh yoki kanallar uchun mijozlarga xizmat ko'rsatishni avtomatlashtiruvchi, turli funksiyalarga ega zamonaviy Telegram botlarni dasturlab berish.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎬</div>
+                <h3>AI Video Yaratish</h3>
+                <p>Sora, Runway, Pika va Luma kabi neyrotarmoqlar yordamida matn yoki rasmlardan professional, yuqori sifatli va kreativ videolar yasab berish.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <h3>Nakrutka va SMM</h3>
+                <p>Telegram va Instagram kanallaringiz uchun obunachilar (podpishik), prosmotr va reaksiyalar qo'shish orqali auditoriyangizni tezkor o'stirish xizmatlari.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Mobil Ilovalar (Flutter)</h3>
+                <p>iOS va Android platformalari uchun tezkor, qulay va chiroyli interfeysga ega bo'lgan boshlang'ich darajadagi mobil ilovalarni tayyorlash.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🇰🇷</div>
+                <h3>Koreys Tili & O'qish</h3>
+                <p>TOPIK imtihonlariga tayyorgarlik va Janubiy Koreyada oliy ta'lim olish (grantlar, universitetlar) bo'yicha amaliy maslahatlar va yo'nalish berish.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🛠</div>
+                <h3>Qolgan Barcha IT Xizmatlar</h3>
+                <p>Ijtimoiy tarmoqlarni boshqarish, prompt muhandisligi, raqamli muammolarga yechim topish va boshqa turli xil texnik xizmatlar.</p>
+            </div>
+        </div>
+
+        <a href="https://t.me/sizning_username" class="contact-btn">Men bilan bog'lanish (Telegram)</a>
+        
+        <footer>
+            <p>&copy; 2026 Avazbek Aliyev. Barcha huquqlar himoyalangan.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
